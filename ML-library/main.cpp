@@ -5,27 +5,26 @@
 using namespace std;
 
 int main(){
-    
     Matrix m{
-        {1,2,3,4},
-        {1,1,1,1},
-        {1,2,3,4}
+        {1},
+        {2},
+        {3},
+        {4}
     };
 
     m.print();
     cout << endl;
     Matrix m2{
-        {1,1,1,1},
-        {2,1,2,3},
-        {3,3,3,3},
-        {4,4,4,4}
+        {10},
+        {22},
+        {33},
+        {41}
     };
 
     m2.print();
     cout << endl;
 
-    Matrix sum = m2.sum({m});
+    Matrix sum = m - m2;
     sum.print();
-
     return 0;
 }

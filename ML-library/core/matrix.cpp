@@ -16,8 +16,6 @@ Matrix::Matrix(initializer_list<initializer_list<double>> values){
             throw invalid_argument("All rows must have the same number of columns.");
         }
     }
-    cout << "rows: " << rows << endl;
-    cout << "cols: " << cols << endl;
     matrix.reserve(rows*cols);
     for(auto row : values){
         for(double val : row)
@@ -32,20 +30,15 @@ Matrix::Matrix(size_t r, size_t c){
 }
 
 Matrix::~Matrix(){
-   matrix.clear();
+    
 }
 
-double& Matrix::operator()(size_t i, size_t j) {
-    return matrix[i * cols + j];
-}
-
-const double& Matrix::operator()(size_t i, size_t j) const {
-    return matrix[i * cols + j];
-}
-
-Matrix Matrix::sum(initializer_list<Matrix> matrix1){
-    Matrix result(rows,cols);
-    for(auto matrix : matrix1){
+Matrix Matrix::sum(initializer_list<Matrix> matrices){
+    auto it = matrices.begin();
+    size_t r = it->getRows();
+    size_t c = it->getCols();
+    Matrix result(r,c);
+    for(auto matrix : matrices){
         for(size_t i = 0; i < matrix.getRows();i++){
             for(size_t j = 0; j < matrix.getCols(); j++){
                 result(i,j) += matrix(i,j);
@@ -62,4 +55,8 @@ void Matrix::print(){
         }
         cout << endl;
     }
+}
+
+double Matrix::get_number(size_t i, size_t j){
+    return matrix[i*cols + j];
 }
