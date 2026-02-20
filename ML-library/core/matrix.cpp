@@ -11,11 +11,6 @@ Matrix::Matrix(initializer_list<initializer_list<double>> values){
     if (cols == 0) {
         throw invalid_argument("Matrix rows cannot be empty.");
     }
-    for (const auto& row : values) {
-        if (row.size() != cols) {
-            throw invalid_argument("All rows must have the same number of columns.");
-        }
-    }
     matrix.reserve(rows*cols);
     for(auto row : values){
         for(double val : row)
@@ -59,4 +54,18 @@ void Matrix::print(){
 
 double Matrix::get_number(size_t i, size_t j){
     return matrix[i*cols + j];
+}
+
+Matrix Matrix::get_column(size_t idx){
+
+    if(idx >= cols or idx < 0)
+        throw invalid_argument("The index must be valid");
+
+    Matrix result(1,rows);
+    size_t k = 0;
+    for(size_t i = 0; i < rows; i++){
+        result(0,k) = matrix[idx + i*cols];
+        k++;
+    }
+    return result;
 }

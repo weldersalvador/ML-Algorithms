@@ -53,6 +53,9 @@ class Matrix{
             }  
             return result;
         }
+
+        Matrix get_column(size_t idx);
+
 };
 
 #endif
