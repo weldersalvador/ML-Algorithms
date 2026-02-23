@@ -58,14 +58,37 @@ double Matrix::get_number(size_t i, size_t j){
 
 Matrix Matrix::get_column(size_t idx){
 
-    if(idx >= cols or idx < 0)
+    if(idx >= cols)
         throw invalid_argument("The index must be valid");
 
-    Matrix result(1,rows);
+    Matrix result(rows,1);
     size_t k = 0;
     for(size_t i = 0; i < rows; i++){
         result(0,k) = matrix[idx + i*cols];
         k++;
+    }
+    return result;
+}
+
+Matrix Matrix::get_row(size_t idx){
+    if(idx >= rows)
+        throw invalid_argument("The index must be valid");
+
+    Matrix result(1,cols);
+    size_t k = 0;
+    for(size_t i = 0; i < rows; i++){
+        result(0,k) = matrix[i];
+        k++;
+    }
+    return result;
+}
+
+Matrix Matrix::transpose(){
+    Matrix result(cols, rows);
+    for(size_t i = 0; i < cols; i++){
+        for(size_t j = 0; j < rows; j++){
+            result(i,j) = matrix[j*cols + i];
+        }
     }
     return result;
 }

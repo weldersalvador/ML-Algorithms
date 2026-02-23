@@ -54,7 +54,28 @@ class Matrix{
             return result;
         }
 
+        Matrix operator*(const Matrix &other_matrix) const{
+            if(cols != other_matrix.getRows())
+                throw invalid_argument("Incompatible dimensions");
+
+            Matrix result(rows,other_matrix.getCols());
+
+            for(size_t i = 0; i < rows; i++){
+                for(size_t j = 0; j < other_matrix.getCols(); j++){
+                    for(size_t k = 0; k < cols; k++){
+                        result(i,j) += matrix[i*cols + k]*other_matrix(k,j);
+                    }
+                }
+            }
+
+            return result;
+            
+        }
+
         Matrix get_column(size_t idx);
+        Matrix get_row(size_t idx);
+
+        Matrix transpose();
 
 };
 
