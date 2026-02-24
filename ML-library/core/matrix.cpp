@@ -21,7 +21,7 @@ Matrix::Matrix(initializer_list<initializer_list<double>> values){
 Matrix::Matrix(size_t r, size_t c){
     rows = r;
     cols = c;
-    matrix.reserve(r*c);
+    matrix.resize(r*c);
 }
 
 Matrix::~Matrix(){
@@ -91,4 +91,28 @@ Matrix Matrix::transpose(){
         }
     }
     return result;
+}
+
+Matrix Matrix::sum(size_t axis) const{
+    if(axis == 0){
+        Matrix result(1,cols);
+        for(size_t i = 0; i < cols; i++){
+            for(size_t j = 0; j < rows; j++){
+                result(0,i) += (*this)(j,i);
+            }
+        }
+        return result;
+    }
+    else if(axis == 1){
+        Matrix result(rows,1);
+        for(size_t i = 0; i < rows; i++){
+            for(size_t j = 0; j < cols; j++){
+                result(i,0) += (*this)(i,j);
+            }
+        }
+        return result;
+    }
+    else{
+        throw invalid_argument("Axis must be 0 (columns) or 1 (axis)");
+    }
 }

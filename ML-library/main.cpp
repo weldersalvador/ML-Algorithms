@@ -5,23 +5,13 @@
 using namespace std;
 
 int main(){
-    Matrix m{
-        {1,1,1},
-        {2,3,1}
-    };
-
-    m.print();
     cout << endl;
     Matrix m2{
-        {10},
-        {20},
-        {30}
+        {1,2,3},
+        {4,5,6},
+        {7,8,9}
     };
-
-    m2.print();
-    cout << endl;
-
-    Matrix t = m2.transpose();
-    t.print();
+    Matrix sum = m2.sum(1);
+    sum.print();
     return 0;
 }

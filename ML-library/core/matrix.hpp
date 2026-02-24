@@ -67,15 +67,25 @@ class Matrix{
                     }
                 }
             }
-
             return result;
-            
+        }
+
+        Matrix operator*(const double scalar){
+            Matrix result(rows,cols);
+            for(size_t i = 0; i < rows; i++){
+                for(size_t j = 0; j < cols; j++){
+                    result(i,j) = matrix[i*cols + j]*scalar;
+                }
+            }
+            return result;
         }
 
         Matrix get_column(size_t idx);
         Matrix get_row(size_t idx);
 
         Matrix transpose();
+
+        Matrix sum(size_t axis) const;
 
 };
 
