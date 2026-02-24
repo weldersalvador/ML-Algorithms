@@ -1,6 +1,6 @@
 #ifndef MATRIX_HPP
 #define MATRIX_HPP
-
+#include <functional>
 #include <stdexcept>
 #include <vector>
 
@@ -90,6 +90,9 @@ class Matrix{
         static Matrix hadamard(Matrix arr1, Matrix arr2);
         Matrix exp();
         Matrix log();
+        static Matrix random_normal(size_t rows, size_t cols,double mean, double standard_dev);
+        Matrix apply(function<double(double)> func);
+        double mse(Matrix results);
 
 };
 

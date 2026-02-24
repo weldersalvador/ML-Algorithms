@@ -4,20 +4,20 @@
 
 using namespace std;
 
+double squared(int x){
+    return x*x;
+}
+    
+
 int main(){
     cout << endl;
     Matrix m1{
-        {1,3,3},
-        {4,5,6},
-        {7,8,9}
+        {12,18,32,38,48}
     };
 
     Matrix m2{
-        {2,2,3},
-        {1,1,1},
-        {3,3,3}
+        {10,20,30,40,50}
     };
-    Matrix exp = m1.exp();
-    exp.print();
+    cout << m1.mse(m2) << endl;
     return 0;
 }

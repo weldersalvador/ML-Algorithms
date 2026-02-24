@@ -1,6 +1,9 @@
 #include "matrix.hpp"
 #include <iostream>
 #include <cmath>
+#include <random>
+#include <ctime>
+#include <functional>
 using namespace std;
 
 Matrix::Matrix(initializer_list<initializer_list<double>> values){
@@ -178,3 +181,36 @@ Matrix Matrix::log(){
     }
     return result;
 }
+
+Matrix Matrix::random_normal(size_t rows, size_t cols,double mean, double stddv){
+    random_device rd;
+    mt19937 gen(rd());
+    normal_distribution<double> dist(mean,stddv);
+    Matrix result(rows,cols);
+    for(size_t i = 0; i < rows; i++){
+        for(size_t j = 0; j < cols; j++){
+            result(i,j) = dist(gen);
+        }
+    }
+    return result;
+}
+
+Matrix Matrix::apply(function<double(double)> f){
+    Matrix result(rows,cols);
+    for(size_t i = 0; i < rows; i++){
+        for(size_t j = 0; j < cols; j++){
+            result(i,j) = f((*this)(i,j));
+        }
+    }
+    return result;
+}
+
+double Matrix::mse(Matrix results){
+    double mse = 0;
+    for(size_t i = 0; i < results.getRows(); i++){
+        for(size_t j = 0; j < results.getCols(); j++){
+            mse += ((*this)(i,j) - results(i,j))*((*this)(i,j) - results(i,j));
+        }
+    }
+    return mse / (rows*cols);
+} 
