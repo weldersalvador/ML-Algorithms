@@ -1,12 +1,13 @@
 CXX      := g++
-CXXFLAGS := -std=c++17 -Wall -Wextra -O2
+CXXFLAGS := -std=c++17 -Wall -Wextra -O2 -Icore -Ioptim -Imodels
 
-SRC_DIR  := core
-SRCS     := main.cpp \
-            $(SRC_DIR)/matrix.cpp
+TARGET := ml_library
 
-OBJS     := $(SRCS:.cpp=.o)
-TARGET   := ml_library
+# Pega TODOS os .cpp do projeto (inclusive subpastas)
+SRCS := $(wildcard *.cpp) $(wildcard */*.cpp)
+
+# Gera os .o correspondentes
+OBJS := $(SRCS:.cpp=.o)
 
 # Default target
 all: $(TARGET)
@@ -14,11 +15,9 @@ all: $(TARGET)
 $(TARGET): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
-main.o: main.cpp $(SRC_DIR)/matrix.hpp
-	$(CXX) $(CXXFLAGS) -c -o $@ $<
-
-$(SRC_DIR)/matrix.o: $(SRC_DIR)/matrix.cpp $(SRC_DIR)/matrix.hpp
-	$(CXX) $(CXXFLAGS) -c -o $@ $<
+# Regra genérica para qualquer .cpp virar .o
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJS) $(TARGET)

@@ -1,6 +1,6 @@
 #include <iostream>
 #include "core/matrix.hpp"
-
+#include "optim/sgd.hpp"
 
 using namespace std;
 
@@ -18,6 +18,6 @@ int main(){
     Matrix m2{
         {10,20,30,40,50}
     };
-    cout << m1.mse(m2) << endl;
+    SGD theta = SGD(m1,m2,30,0.01);
     return 0;
 }
