@@ -1,5 +1,6 @@
 #include "matrix.hpp"
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 Matrix::Matrix(initializer_list<initializer_list<double>> values){
@@ -115,4 +116,65 @@ Matrix Matrix::sum(size_t axis) const{
     else{
         throw invalid_argument("Axis must be 0 (columns) or 1 (axis)");
     }
+}
+
+Matrix Matrix::mean(size_t axis) const{
+    if(axis == 0){
+        Matrix result(1,cols);
+        for(size_t i = 0; i < cols; i++){
+            double sum = 0;
+            for(size_t j = 0; j < rows; j++){
+                sum += (*this)(j,i);
+            }
+            result(0,i) = sum / rows;
+        }
+        return result;
+    }
+    else if(axis == 1){
+        Matrix result(rows,1);
+        for(size_t i = 0; i < rows; i++){
+            double sum = 0;
+            for(size_t j = 0; j < cols; j++){
+                sum += (*this)(i,j);
+            }
+            result(i,0) = sum / cols;
+        }
+        return result;
+    }
+    else{
+        throw invalid_argument("Axis must be 0 (columns) or 1 (axis)");
+    }
+}
+
+Matrix Matrix::hadamard(Matrix matrix1, Matrix matrix2){
+    if(matrix1.getCols() != matrix2.getCols() || matrix1.getRows() != matrix2.getRows())
+        throw invalid_argument("The matrices must have the same columns and rows");
+
+    Matrix result(matrix1.getRows(),matrix1.getCols());
+
+    for(size_t i = 0; i < matrix1.getRows();i++){
+        for(size_t j = 0; j < matrix1.getCols(); j++){
+            result(i,j) = matrix1(i,j)*matrix2(i,j);
+        }
+    }
+    return result;
+}
+Matrix Matrix::exp(){
+    Matrix result(rows,cols);
+    for(size_t i = 0; i < rows; i++){
+        for(size_t j = 0; j < cols; j++){
+            result(i,j) = std::exp((*this)(i,j));
+        }
+    }
+    return result;
+}
+
+Matrix Matrix::log(){
+    Matrix result(rows,cols);
+    for(size_t i = 0; i < rows; i++){
+        for(size_t j = 0; j < cols; j++){
+            result(i,j) = std::log((*this)(i,j));
+        }
+    }
+    return result;
 }

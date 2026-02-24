@@ -6,12 +6,18 @@ using namespace std;
 
 int main(){
     cout << endl;
-    Matrix m2{
-        {1,2,3},
+    Matrix m1{
+        {1,3,3},
         {4,5,6},
         {7,8,9}
     };
-    Matrix sum = m2.sum(1);
-    sum.print();
+
+    Matrix m2{
+        {2,2,3},
+        {1,1,1},
+        {3,3,3}
+    };
+    Matrix exp = m1.exp();
+    exp.print();
     return 0;
 }

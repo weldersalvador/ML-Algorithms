@@ -86,6 +86,10 @@ class Matrix{
         Matrix transpose();
 
         Matrix sum(size_t axis) const;
+        Matrix mean(size_t axis) const;
+        static Matrix hadamard(Matrix arr1, Matrix arr2);
+        Matrix exp();
+        Matrix log();
 
 };
 
