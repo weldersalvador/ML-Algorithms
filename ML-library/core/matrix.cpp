@@ -87,7 +87,7 @@ Matrix Matrix::get_row(size_t idx){
     return result;
 }
 
-Matrix Matrix::transpose(){
+Matrix Matrix::transpose() const{
     Matrix result(cols, rows);
     for(size_t i = 0; i < cols; i++){
         for(size_t j = 0; j < rows; j++){

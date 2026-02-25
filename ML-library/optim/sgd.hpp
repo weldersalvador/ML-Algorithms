@@ -1,23 +1,21 @@
 #ifndef SGD_HPP
 #define SGD_HPP
+
 #include <iostream>
+#include "matrix.hpp"  
 
-using namespace std;
-
-class SGD{
+class SGD {
     private:
-        Matrix X;
-        Matrix y;
-        Matrix theta;
-
-        size_t number_epochs;
+        const Matrix &X;
+        const Matrix &y;
+        Matrix theta; 
         double learning_rate;
+        std::size_t number_epochs;
     public:
-        SGD(const Matrix& X,const Matrix& y,size_t epochs,double lr);
+        SGD(const Matrix& X,const Matrix& y,size_t epochs, double lr);
         ~SGD();
 
         Matrix gd();
 };
-
 
 #endif

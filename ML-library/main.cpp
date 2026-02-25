@@ -18,6 +18,8 @@ int main(){
     Matrix m2{
         {10,20,30,40,50}
     };
-    SGD theta = SGD(m1,m2,30,0.01);
+    SGD model = SGD(m1,m2,30,0.01);
+    Matrix thetas = model.gd();
+    cout << "Passou" << endl;
     return 0;
 }

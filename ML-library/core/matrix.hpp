@@ -83,7 +83,7 @@ class Matrix{
         Matrix get_column(size_t idx);
         Matrix get_row(size_t idx);
 
-        Matrix transpose();
+        Matrix transpose() const;
 
         Matrix sum(size_t axis) const;
         Matrix mean(size_t axis) const;
