@@ -213,4 +213,29 @@ double Matrix::mse(Matrix results){
         }
     }
     return mse / (rows*cols);
-} 
+}
+
+Matrix Matrix::expand(size_t axis, size_t number){
+    if(axis == 0){
+        Matrix result(rows,cols + number);
+        double d = (*this)(0,0);
+        for(size_t i = 0; i < rows; i++){
+            for(size_t j = 0; j < cols + number; j++){
+                result(i,j) = d;
+            }
+        }
+        return result;
+    }
+    else if(axis == 1){
+        Matrix result(rows + number,cols);
+        double d = (*this)(0,0);
+        for(size_t i = 0; i < rows + number; i++){
+            for(size_t j = 0; j < cols + number; j++){
+                result(i,j) = d;
+            }
+        }
+        return result;
+    }
+    else
+        throw invalid_argument("axis must be 0 (column) or 1 (row)");
+}

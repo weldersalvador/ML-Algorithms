@@ -54,6 +54,16 @@ class Matrix{
             return result;
         }
 
+        Matrix operator-(double k) const{
+            Matrix result(rows,cols);
+            for(size_t i = 0; i < rows;i++){
+                for(size_t j = 0; j < cols; j++){
+                    result(i,j) = matrix[i*cols + j] - k;
+                }
+            }  
+            return result;
+        }
+
         Matrix operator*(const Matrix &other_matrix) const{
             if(cols != other_matrix.getRows())
                 throw invalid_argument("Incompatible dimensions");
@@ -93,6 +103,7 @@ class Matrix{
         static Matrix random_normal(size_t rows, size_t cols,double mean, double standard_dev);
         Matrix apply(function<double(double)> func);
         double mse(Matrix results);
+        Matrix expand(size_t axis, size_t n);
 
 };
 
