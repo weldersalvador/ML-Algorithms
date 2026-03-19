@@ -1,3 +1,6 @@
 matrix.o
 main.o
 ml_library.exe
+./build
+Makefile
+CMakeLists
