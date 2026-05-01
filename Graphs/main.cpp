@@ -12,7 +12,7 @@ int main(){
     g1.adicionar_aresta(1,3);
     g1.adicionar_aresta(2,3);
 
-    g1.imprimir();
+    g1.busca_profundidade_iterativa(0);
 
     return 0;
 }

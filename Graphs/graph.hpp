@@ -2,6 +2,8 @@
 #define GRAPH_HPP
 #include <iostream>
 #include <vector>
+#include <stack>
+#include <queue>
 
 using namespace std;
 
@@ -24,9 +26,12 @@ class Graph{
     public:
         Graph(int v);
         ~Graph();
-
         void adicionar_aresta(int u, int v, bool direcionado = false);
         void imprimir();
+
+        void busca_profundidade_recursiva(int inicio);
+        void aux_busca_profundidade(No* inicio);
+        void busca_profundidade_iterativa(int inicio);
 };
 
 #endif

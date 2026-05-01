@@ -16,6 +16,7 @@ CMakeFiles/main.dir/graph.cpp.obj: C:/Users/Welder/Documents/GitHub/ML-Algorithm
   C:/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h \
   C:/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h \
   C:/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
+  C:/mingw64/include/c++/15.2.0/bits/deque.tcc \
   C:/mingw64/include/c++/15.2.0/bits/exception.h \
   C:/mingw64/include/c++/15.2.0/bits/exception_defines.h \
   C:/mingw64/include/c++/15.2.0/bits/exception_ptr.h \
@@ -48,11 +49,15 @@ CMakeFiles/main.dir/graph.cpp.obj: C:/Users/Welder/Documents/GitHub/ML-Algorithm
   C:/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_construct.h \
+  C:/mingw64/include/c++/15.2.0/bits/stl_deque.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_function.h \
+  C:/mingw64/include/c++/15.2.0/bits/stl_heap.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_iterator.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_pair.h \
+  C:/mingw64/include/c++/15.2.0/bits/stl_queue.h \
+  C:/mingw64/include/c++/15.2.0/bits/stl_stack.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_vector.h \
   C:/mingw64/include/c++/15.2.0/bits/streambuf.tcc \
@@ -75,6 +80,7 @@ CMakeFiles/main.dir/graph.cpp.obj: C:/Users/Welder/Documents/GitHub/ML-Algorithm
   C:/mingw64/include/c++/15.2.0/cwctype \
   C:/mingw64/include/c++/15.2.0/debug/assertions.h \
   C:/mingw64/include/c++/15.2.0/debug/debug.h \
+  C:/mingw64/include/c++/15.2.0/deque \
   C:/mingw64/include/c++/15.2.0/exception \
   C:/mingw64/include/c++/15.2.0/ext/alloc_traits.h \
   C:/mingw64/include/c++/15.2.0/ext/atomicity.h \
@@ -89,6 +95,8 @@ CMakeFiles/main.dir/graph.cpp.obj: C:/Users/Welder/Documents/GitHub/ML-Algorithm
   C:/mingw64/include/c++/15.2.0/new \
   C:/mingw64/include/c++/15.2.0/ostream \
   C:/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
+  C:/mingw64/include/c++/15.2.0/queue \
+  C:/mingw64/include/c++/15.2.0/stack \
   C:/mingw64/include/c++/15.2.0/stdexcept \
   C:/mingw64/include/c++/15.2.0/stdlib.h \
   C:/mingw64/include/c++/15.2.0/streambuf \
@@ -171,6 +179,7 @@ CMakeFiles/main.dir/main.cpp.obj: C:/Users/Welder/Documents/GitHub/ML-Algorithms
   C:/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h \
   C:/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h \
   C:/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
+  C:/mingw64/include/c++/15.2.0/bits/deque.tcc \
   C:/mingw64/include/c++/15.2.0/bits/exception.h \
   C:/mingw64/include/c++/15.2.0/bits/exception_defines.h \
   C:/mingw64/include/c++/15.2.0/bits/exception_ptr.h \
@@ -203,11 +212,15 @@ CMakeFiles/main.dir/main.cpp.obj: C:/Users/Welder/Documents/GitHub/ML-Algorithms
   C:/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_construct.h \
+  C:/mingw64/include/c++/15.2.0/bits/stl_deque.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_function.h \
+  C:/mingw64/include/c++/15.2.0/bits/stl_heap.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_iterator.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_pair.h \
+  C:/mingw64/include/c++/15.2.0/bits/stl_queue.h \
+  C:/mingw64/include/c++/15.2.0/bits/stl_stack.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_vector.h \
   C:/mingw64/include/c++/15.2.0/bits/streambuf.tcc \
@@ -230,6 +243,7 @@ CMakeFiles/main.dir/main.cpp.obj: C:/Users/Welder/Documents/GitHub/ML-Algorithms
   C:/mingw64/include/c++/15.2.0/cwctype \
   C:/mingw64/include/c++/15.2.0/debug/assertions.h \
   C:/mingw64/include/c++/15.2.0/debug/debug.h \
+  C:/mingw64/include/c++/15.2.0/deque \
   C:/mingw64/include/c++/15.2.0/exception \
   C:/mingw64/include/c++/15.2.0/ext/alloc_traits.h \
   C:/mingw64/include/c++/15.2.0/ext/atomicity.h \
@@ -244,6 +258,8 @@ CMakeFiles/main.dir/main.cpp.obj: C:/Users/Welder/Documents/GitHub/ML-Algorithms
   C:/mingw64/include/c++/15.2.0/new \
   C:/mingw64/include/c++/15.2.0/ostream \
   C:/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
+  C:/mingw64/include/c++/15.2.0/queue \
+  C:/mingw64/include/c++/15.2.0/stack \
   C:/mingw64/include/c++/15.2.0/stdexcept \
   C:/mingw64/include/c++/15.2.0/stdlib.h \
   C:/mingw64/include/c++/15.2.0/streambuf \
@@ -318,8 +334,6 @@ C:/Users/Welder/Documents/GitHub/ML-Algorithms/Graphs/graph.hpp:
 
 C:/mingw64/x86_64-w64-mingw32/include/wctype.h:
 
-C:/mingw64/x86_64-w64-mingw32/include/time.h:
-
 C:/mingw64/x86_64-w64-mingw32/include/sys/types.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl:
@@ -356,31 +370,27 @@ C:/mingw64/x86_64-w64-mingw32/include/locale.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/limits.h:
 
-C:/mingw64/include/c++/15.2.0/bits/uses_allocator.h:
+C:/mingw64/x86_64-w64-mingw32/include/errno.h:
 
-C:/mingw64/x86_64-w64-mingw32/include/vadefs.h:
+C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h:
 
-C:/mingw64/include/c++/15.2.0/bits/concept_check.h:
+C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h:
 
-C:/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h:
+C:/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h:
 
-C:/mingw64/include/c++/15.2.0/bits/streambuf.tcc:
-
-C:/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h:
-
-C:/mingw64/include/c++/15.2.0/system_error:
-
-C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h:
+C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h:
 
 C:/mingw64/include/c++/15.2.0/bits/stl_iterator.h:
 
 C:/mingw64/include/c++/15.2.0/ext/type_traits.h:
 
+C:/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h:
+
+C:/mingw64/include/c++/15.2.0/system_error:
+
+C:/mingw64/include/c++/15.2.0/bits/stl_heap.h:
+
 C:/mingw64/include/c++/15.2.0/bits/stl_construct.h:
-
-C:/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h:
-
-C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h:
 
 C:/mingw64/include/c++/15.2.0/bits/stl_function.h:
 
@@ -404,19 +414,29 @@ C:/mingw64/x86_64-w64-mingw32/include/stdio.h:
 
 C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_base.h:
 
-C:/mingw64/x86_64-w64-mingw32/include/errno.h:
-
-C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_inline.h:
-
-C:/mingw64/include/c++/15.2.0/bits/new_allocator.h:
-
 C:/mingw64/x86_64-w64-mingw32/include/ctype.h:
 
 C:/mingw64/include/c++/15.2.0/bits/stl_bvector.h:
 
+C:/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h:
+
+C:/mingw64/include/c++/15.2.0/bits/memoryfwd.h:
+
+C:/mingw64/include/c++/15.2.0/bits/localefwd.h:
+
 C:/mingw64/include/c++/15.2.0/bits/charconv.h:
 
 C:/mingw64/include/c++/15.2.0/bits/ostream_insert.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/vadefs.h:
+
+C:/mingw64/include/c++/15.2.0/bits/concept_check.h:
+
+C:/mingw64/include/c++/15.2.0/bits/uses_allocator.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h:
+
+C:/mingw64/include/c++/15.2.0/bits/basic_string.tcc:
 
 C:/mingw64/include/c++/15.2.0/cctype:
 
@@ -434,13 +454,7 @@ C:/mingw64/include/c++/15.2.0/bits/basic_ios.h:
 
 C:/mingw64/include/c++/15.2.0/cstdlib:
 
-C:/mingw64/include/c++/15.2.0/bits/stringfwd.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/wchar.h:
-
-C:/mingw64/include/c++/15.2.0/typeinfo:
-
-C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h:
+C:/mingw64/include/c++/15.2.0/bits/stl_queue.h:
 
 C:/mingw64/include/c++/15.2.0/bits/char_traits.h:
 
@@ -458,12 +472,6 @@ C:/mingw64/include/c++/15.2.0/bits/alloc_traits.h:
 
 C:/mingw64/include/c++/15.2.0/pstl/pstl_config.h:
 
-C:/mingw64/include/c++/15.2.0/bits/ios_base.h:
-
-C:/mingw64/include/c++/15.2.0/bits/basic_string.h:
-
-C:/mingw64/include/c++/15.2.0/bits/memory_resource.h:
-
 C:/Users/Welder/Documents/GitHub/ML-Algorithms/Graphs/graph.cpp:
 
 C:/mingw64/include/c++/15.2.0/bits/functional_hash.h:
@@ -473,8 +481,6 @@ C:/mingw64/include/c++/15.2.0/bits/ptr_traits.h:
 C:/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h:
 
 C:/mingw64/include/c++/15.2.0/bits/exception_defines.h:
-
-C:/mingw64/include/c++/15.2.0/bits/string_view.tcc:
 
 C:/mingw64/include/c++/15.2.0/bits/stl_pair.h:
 
@@ -510,6 +516,18 @@ C:/mingw64/include/c++/15.2.0/string:
 
 C:/mingw64/include/c++/15.2.0/bits/invoke.h:
 
+C:/mingw64/x86_64-w64-mingw32/include/time.h:
+
+C:/mingw64/include/c++/15.2.0/bits/stl_deque.h:
+
+C:/mingw64/include/c++/15.2.0/bits/basic_string.h:
+
+C:/mingw64/include/c++/15.2.0/bits/memory_resource.h:
+
+C:/mingw64/include/c++/15.2.0/bits/ios_base.h:
+
+C:/mingw64/include/c++/15.2.0/bits/streambuf.tcc:
+
 C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h:
 
 C:/mingw64/include/c++/15.2.0/ext/alloc_traits.h:
@@ -524,7 +542,23 @@ C:/mingw64/include/c++/15.2.0/bits/version.h:
 
 C:/mingw64/include/c++/15.2.0/bits/locale_facets.h:
 
-C:/mingw64/include/c++/15.2.0/bits/localefwd.h:
+C:/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h:
+
+C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h:
+
+C:/mingw64/include/c++/15.2.0/stack:
+
+C:/mingw64/include/c++/15.2.0/bits/new_allocator.h:
+
+C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_inline.h:
+
+C:/mingw64/include/c++/15.2.0/bits/string_view.tcc:
+
+C:/mingw64/include/c++/15.2.0/bits/stringfwd.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/wchar.h:
+
+C:/mingw64/include/c++/15.2.0/typeinfo:
 
 C:/mingw64/include/c++/15.2.0/clocale:
 
@@ -536,6 +570,10 @@ C:/mingw64/include/c++/15.2.0/cwchar:
 
 C:/mingw64/include/c++/15.2.0/debug/debug.h:
 
+C:/mingw64/x86_64-w64-mingw32/include/corecrt.h:
+
+C:/mingw64/include/c++/15.2.0/deque:
+
 C:/mingw64/include/c++/15.2.0/bits/postypes.h:
 
 C:/mingw64/include/c++/15.2.0/exception:
@@ -543,6 +581,8 @@ C:/mingw64/include/c++/15.2.0/exception:
 C:/mingw64/include/c++/15.2.0/cerrno:
 
 C:/mingw64/include/c++/15.2.0/ext/atomicity.h:
+
+C:/mingw64/include/c++/15.2.0/bits/stl_stack.h:
 
 C:/mingw64/include/c++/15.2.0/concepts:
 
@@ -567,6 +607,12 @@ C:/mingw64/include/c++/15.2.0/new:
 C:/mingw64/include/c++/15.2.0/bits/predefined_ops.h:
 
 C:/mingw64/include/c++/15.2.0/ostream:
+
+C:/mingw64/x86_64-w64-mingw32/include/corecrt_wctype.h:
+
+C:/mingw64/include/c++/15.2.0/bits/deque.tcc:
+
+C:/mingw64/include/c++/15.2.0/queue:
 
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h:
 
@@ -607,17 +653,3 @@ C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h:
 C:/mingw64/x86_64-w64-mingw32/include/_mingw.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/_timeval.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/corecrt.h:
-
-C:/mingw64/include/c++/15.2.0/bits/memoryfwd.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h:
-
-C:/mingw64/include/c++/15.2.0/bits/basic_string.tcc:
-
-C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/corecrt_wctype.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h:

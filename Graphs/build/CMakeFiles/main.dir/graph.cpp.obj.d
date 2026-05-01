@@ -150,4 +150,11 @@ CMakeFiles/main.dir/graph.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
  C:/mingw64/include/c++/15.2.0/bits/stl_vector.h \
  C:/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
- C:/mingw64/include/c++/15.2.0/bits/vector.tcc
+ C:/mingw64/include/c++/15.2.0/bits/vector.tcc \
+ C:/mingw64/include/c++/15.2.0/stack C:/mingw64/include/c++/15.2.0/deque \
+ C:/mingw64/include/c++/15.2.0/bits/stl_deque.h \
+ C:/mingw64/include/c++/15.2.0/bits/deque.tcc \
+ C:/mingw64/include/c++/15.2.0/bits/stl_stack.h \
+ C:/mingw64/include/c++/15.2.0/queue \
+ C:/mingw64/include/c++/15.2.0/bits/stl_heap.h \
+ C:/mingw64/include/c++/15.2.0/bits/stl_queue.h
